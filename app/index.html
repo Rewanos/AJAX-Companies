@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Companies information</title>
+	<meta name="description" content="Companies">
+	
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon2.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	
+</head>
+
+<body>
+
+
+	<header class="header_form">
+		<div class="container container-center">
+			<div class="centered">
+			<form class="form-horizontal">
+
+			  <div class="form-group name">
+			    <label class="control-label col-sm-3" for="name">First name:</label>
+			    <div class="col-md-6 col-sm-6"> 
+			      <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+			    </div>
+			  </div>
+
+			  <div class="form-group surname">
+			    <label class="control-label col-sm-3" for="secound_name">Secound name:</label>
+			    <div class="col-md-6 col-sm-6"> 
+			      <input type="text" class="form-control" id="secoundName" placeholder="Secound name" required>
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label class="control-label col-sm-3" for="gender">Gender:</label>
+			    <div class="col-md-6 col-sm-6"> 
+			      <select class="form-control" id="sel1">
+				    <option>Male</option>
+				    <option>Female</option>
+				  </select>
+			    </div>
+			  </div>
+
+			  <div class="form-group email">
+			    <label class="control-label col-sm-3" for="email">Email:</label>
+			    <div class="col-md-6 col-sm-6">
+			      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+			    </div>
+			  </div>
+
+			  <div class="form-group pwd">
+			    <label class="control-label col-sm-3" for="pwd">Password:</label>
+			    <div class="col-md-6 col-sm-6"> 
+			      <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+			    </div>
+			  </div>
+
+			 <div class="form-group"> 
+			    <div class="col-sm-offset-2 col-md-6 col-sm-6">
+		      <div class="checkbox">
+			        <label><input type="checkbox"> Remember me</label>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="form-group"> 
+			    <div class="col-sm-offset-2 col-sm-6">
+			      <button id="send" class="button">Submit</button>
+			    </div>
+			  </div>
+
+			</form>
+			</div>
+		</div>
+	</header>
+
+<div class="main-content">
+	<section class="accent">
+		<div class="container">
+			<div class="row">
+				<div class="container_companies">
+					<div class="col-sm-6 col-xs-12">
+						<div class="company_numb">
+							<h3 class="centered">Total Companies</h3>
+							<!-- Прелоадер -->
+							<div class="loader">
+								<div class="cssload-loader">
+									<div class="cssload-inner cssload-one"></div>
+									<div class="cssload-inner cssload-two"></div>
+									<div class="cssload-inner cssload-three"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xs-12">
+						<div class="company_list">
+							<h3 class="centered">List of Companies</h3>
+							<ul class="company_list_ul"></ul>
+							<!-- Прелоадер -->
+							<div class="loader">
+								<div class="cssload-loader">
+									<div class="cssload-inner cssload-one"></div>
+									<div class="cssload-inner cssload-two"></div>
+									<div class="cssload-inner cssload-three"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-xs-12">
+						<div class="company_partners_list">
+							<h3 class="centered">Company partners</h3>
+							<div class="company_partners_buttons">
+								<button class="button_small" data-type="value">Value</button>
+								<button class="button_small" data-type="name">Name</button>
+							</div>
+							<ul class="company_partners_ul"></ul>
+						</div>
+					</div>
+				</div>
+	</section>
+
+
+	<section class="sunshine">
+		<div class="container">
+			<div class="row">
+					<div class="col-sm-12">
+						<h3 class="centered">Companies by Location</h3>
+						<!-- Прелоадер -->
+							<div class="loader">
+								<div class="cssload-loader">
+									<div class="cssload-inner cssload-one"></div>
+									<div class="cssload-inner cssload-two"></div>
+									<div class="cssload-inner cssload-three"></div>
+								</div>
+							</div>
+						<div id="chartdiv"></div>
+
+						<div class="company_country">
+							<button class="company_country_button button_small">Back</button>
+							<ul class="company_country_list"></ul>
+						</div>
+					</div>
+				</div>
+			
+			
+		</div>
+	</section>				
+
+	<section class="fresh">
+		<div class="container">
+			<div class="row">
+				<div class="swiper-slider">
+					<!-- Прелоадер -->
+							<div class="loader">
+								<div class="cssload-loader">
+									<div class="cssload-inner cssload-one"></div>
+									<div class="cssload-inner cssload-two"></div>
+									<div class="cssload-inner cssload-three"></div>
+								</div>
+							</div>
+					<div class='news-block swiper-container'>
+						<h3 class="news centered">News</h3>
+				  		<div class='swiper-wrapper'></div>
+				  		<div class="swiper-button-prev hidden-sm hidden-xs"></div>
+				    	<div class="swiper-button-next hidden-sm hidden-xs"></div>
+				  		<div class="swiper-pagination"></div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	
+</body>
+</html>
